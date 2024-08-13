@@ -82,3 +82,21 @@ void printList(struct Node* head) {
 
 
 
+int main() {
+    struct Node* head = NULL;
+
+    insertAtEnd(&head, 10);
+    insertAtEnd(&head, 20);
+    insertAtEnd(&head, 30);
+    insertAtBeginning(&head, 5);
+
+    printf("Linked list: ");
+    printList(head);  // Output: 5 -> 10 -> 20 -> 30 -> NULL
+
+    deleteNode(&head, 20);
+    printf("After deletion: ");
+    printList(head);  // Output: 5 -> 10 -> 30 -> NULL
+
+    return 0;
+}
+
