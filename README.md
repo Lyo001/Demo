@@ -100,3 +100,100 @@ int main() {
     return 0;
 }
 
+
+
+class Person
+{
+        String name;
+        int age;
+        public Person(String name, int age)
+        {
+                this.name = name;
+                this.age = age;
+        }
+        public void dispPerson()
+        {
+                System.out.println("Name: " + name);
+                System.out.println("Age: " + age);
+        }
+}
+class Student extends Person
+{
+        String grade;
+        public Student(String name, int age, String grade)
+        {
+                super(name, age);
+                this.grade = grade;
+        }
+        public void dispStudent()
+        {
+                dispPerson();
+                System.out.println("Grade: " + grade);
+        }
+}
+class Person
+{
+        String name;
+        int age;
+        public Person(String name, int age)
+        {
+                this.name = name;
+                this.age = age;
+        }
+        public void dispPerson()
+        {
+                System.out.println("Name: " + name);
+                System.out.println("Age: " + age);
+        }
+}
+class Student extends Person
+{
+        String grade;
+        public Student(String name, int age, String grade)
+        {
+                super(name, age);
+                this.grade = grade;
+        }
+        public void dispStudent()
+        {
+                dispPerson();
+                System.out.println("Grade: " + grade);
+        }
+}
+class Person
+{
+        String name;
+        int age;
+        public Person(String name, int age)
+        {
+                this.name = name;
+                this.age = age;
+        }
+        public void dispPerson()
+        {
+                System.out.println("Name: " + name);
+                System.out.println("Age: " + age);
+        }
+}
+class Student extends Person
+{
+        String grade;
+        public Student(String name, int age, String grade)
+        {
+                super(name, age);
+                this.grade = grade;
+        }
+        public void dispStudent()
+        {
+                dispPerson();
+                System.out.println("Grade: " + grade);
+        }
+}
+public class cl1
+{
+        public static void main(String[] args)
+        {
+                Student student = new Student("Jesse James", 19, "A");
+                student.dispStudent();
+        }
+}
